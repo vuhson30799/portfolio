@@ -23,16 +23,19 @@ const ProjectsContent = {
   image: person_project,
   project_content: [
     {
-      title: "My Portfolio",
-      image: project1,
-    },
-    {
       title: "Word Verification",
       image: project2,
+      url: 'https://github.com/vuhson30799/word-verification'
+    },
+    {
+      title: "My Portfolio",
+      image: project1,
+      url: 'https://github.com/vuhson30799/portfolio'
     },
     {
       title: "Document Management",
       image: project3,
+      url: 'https://github.com/vuhson30799/document-management'
     },
   ],
 }
@@ -82,7 +85,9 @@ const Projects = () => {
                 <img src={content.image} alt="..."/>
                 <div className="flex flex-col gap-1 mt-2">
                   <h5 className="font-bold font-Poppins">{content.title}</h5>
-                  <button className="font-bold text-gray self-end">
+                  <button className="font-bold text-gray self-end" onClick={() => {
+                    window.open(content.url, '_blank')
+                  }}>
                     READ MORE
                   </button>
                 </div>

@@ -36,7 +36,7 @@ const contact = {
       link: "tel:+84935803935",
     },
     {
-      text: "Hoàng Sơn",
+      text: "Hoang Son",
       icon: FaFacebook,
       link: "https://www.facebook.com/shvuSSS",
     },
